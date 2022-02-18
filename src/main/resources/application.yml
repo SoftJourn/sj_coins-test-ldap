@@ -1,0 +1,11 @@
+spring.config.import: classpath:.env[.properties]
+
+server.port: ${SJ_COINS_TEST_SERVER_PORT}
+
+spring.ldap.embedded:
+  ldif: ${SJ_COINS_TEST_LDAP_LDIF:"classpath:test-server.ldif"}
+  base-dn: dc=softjourn,dc=com
+  port: ${SJ_COINS_TEST_LDAP_PORT}
+  username: cn=admin,dc=softjourn,dc=com
+  password: admin_pass
+

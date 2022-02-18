@@ -1,0 +1,31 @@
+dn: dc=softjourn,dc=com
+objectclass: top
+objectclass: domain
+objectclass: extensibleObject
+dc: softjourn
+
+dn: ou=people,dc=softjourn,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: people
+
+dn: uid=jdoe,ou=people,dc=softjourn,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: John Doe
+sn: Doe
+mail: jdoe@softjourn.com
+uid: jdoe
+userPassword: jdoe1234
+
+dn: uid=admin,ou=people,dc=softjourn,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Admin
+sn: Admin
+uid: admin
+userPassword: admin1234
